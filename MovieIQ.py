@@ -78,7 +78,7 @@ header{
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/clean_movies.csv")
+    return pd.read_csv("clean_movies.csv")
 
 df = load_data()
 
@@ -88,7 +88,7 @@ df = load_data()
 
 @st.cache_resource
 def load_model():
-    return joblib.load("models/random_forest_model.pkl")
+    return joblib.load("random_forest_model.pkl")
 
 model = load_model()
 
